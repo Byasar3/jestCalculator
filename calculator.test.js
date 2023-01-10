@@ -81,6 +81,18 @@ describe ('testing subtraction', () => {
         const expected = -10;
         expect(actual).toBe(expected);
     })
+
+    test('can subtract negative number from positive number', () => {
+        const actual = calculator.subtract(5, -5);
+        const expected = 10;
+        expect(actual).toBe(expected);
+    })
+
+    test('can subtract a negative number from a negative number', () => {
+        const actual = calculator.subtract(-5, -6);
+        const expected = 1;
+        expect(actual).toBe(expected);
+    })
 })
 
 describe('testing multiply', () => {
@@ -127,6 +139,12 @@ describe('testing divide', () => {
     test('can divide a negative number by a negative number', () => {
         const actual = calculator.divide(-10, -2);
         const expected = 5;
+        expect(actual).toBe(expected);
+    })
+
+    test('can handle being divided by 0', () => {
+        const actual = calculator.divide(10, 0);
+        const expected = Infinity;
         expect(actual).toBe(expected);
     })
 })
