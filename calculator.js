@@ -1,10 +1,10 @@
 // an anonymous function
-const add = function(number1, number2){
-    return number1 + number2;
-}
+// const add = function(number1, number2){
+//     return number1 + number2;
+// }
 
 // exporting the function to be able to test it - it can be imported elsewhere (test file)
-module.exports = {add};
+// module.exports = {add};
 //module is an object 
 
 // creating a constructor 

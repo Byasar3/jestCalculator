@@ -49,3 +49,18 @@ describe ('testing addition', () => {
         expect(actual).toBe(expected);
     })
 })
+
+describe ('testing subtraction', () => {
+
+    test('can subtract two positive numbers', () => {
+        const expected = 5;
+        const actual = calculator.subtract(10, 5);
+        expect(actual).toBe(expected);
+    })
+
+    test('can subtract positive number from negative number', () => {
+        const actual = calculator.subtract(-5, 5);
+        const expected = -10;
+        expect(actual).toBe(expected);
+    })
+})
