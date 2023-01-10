@@ -22,6 +22,13 @@ const Calculator = function(){
     this.divide = function(number1, number2){
         return number1 / number2;
     }
+    this.modulus = function(number1){
+        if (number1 > 0) {
+            return number1 
+        } else if (number1 < 0){
+            return -number1 
+        } else return 0
+    }
 }
 
 // now instead of exporting just {add}, we export {Calculator}

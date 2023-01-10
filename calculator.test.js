@@ -112,3 +112,24 @@ describe('testing divide', () => {
         expect(actual).toBe(expected);
     })
 })
+
+describe('testing modulus', () => {
+
+    test('can give modulus of positive number', () => {
+        const actual = calculator.modulus(2);
+        const expected = 2;
+        expect(actual).toBe(expected);
+    })
+
+    test('can give modulus of negative number', () => {
+        const actual = calculator.modulus(-2);
+        const expected = 2;
+        expect(actual).toBe(expected);
+    })
+
+    test('gives 0 if number is 0', () => {
+        const actual = calculator.modulus(0);
+        const expected = 0;
+        expect(actual).toBe(expected);
+    })
+})
