@@ -147,4 +147,16 @@ describe('testing even or odd', () => {
         const expected = (false);
         expect(actual).toBe(expected);
     })
+
+    test('can give true if negative and even', () => {
+        const actual = calculator.evenOrOdd(-2);
+        const expected = (true);
+        expect(actual).toBe(expected);
+    })
+
+    test('can give false if negative and odd', () => {
+        const actual = calculator.evenOrOdd(-3);
+        const expected = (false);
+        expect(actual).toBe(expected);
+    })
 })
