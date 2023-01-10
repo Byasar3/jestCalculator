@@ -19,6 +19,9 @@ const Calculator = function(){
     this.multiply = function(number1, number2){
         return number1 * number2;
     }
+    this.divide = function(number1, number2){
+        return number1 / number2;
+    }
 }
 
 // now instead of exporting just {add}, we export {Calculator}

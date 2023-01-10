@@ -85,3 +85,30 @@ describe('testing multiply', () => {
         expect(actual).toBe(expected);
     })
 })
+
+describe('testing divide', () => {
+
+    test('can divide two positive numbers', () => {
+        const actual = calculator.divide(10, 2);
+        const expected = 5;
+        expect(actual).toBe(expected);        
+    })
+
+    test('can divide a positive number by a negative number', () => {
+        const actual = calculator.divide(10, -2);
+        const expected = -5;
+        expect(actual).toBe(expected);
+    })
+
+    test('can divide negative number by a positive number', () => {
+        const actual = calculator.divide(-10, 2);
+        const expected = -5;
+        expect(actual).toBe(expected);
+    })
+
+    test('can divide a negative number by a negative number', () => {
+        const actual = calculator.divide(-10, -2);
+        const expected = 5;
+        expect(actual).toBe(expected);
+    })
+})
