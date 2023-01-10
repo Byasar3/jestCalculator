@@ -43,9 +43,27 @@ describe ('testing addition', () => {
         expect(actual).toBe(expected);
     })
 
+    test('can add two positive large numbers', () => {
+        const actual = calculator.add(500000, 500000);
+        const expected = 1000000;
+        expect(actual).toBe(expected);
+    })
+
     test('can add a negative and positive number', () => {
         const expected = -2;
         const actual = calculator.add(-5, 3);
+        expect(actual).toBe(expected);
+    })
+
+    test ('can add two negative numbers', () => {
+        const actual = calculator.add(-3, -5);
+        const expected = -8;
+        expect(actual).toBe(expected);
+    })
+
+    test('can add decimals', () => {
+        const actual = calculator.add(0.3, 0.2);
+        const expected = 0.5;
         expect(actual).toBe(expected);
     })
 })
