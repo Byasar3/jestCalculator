@@ -66,6 +66,12 @@ describe ('testing addition', () => {
         const expected = 0.5;
         expect(actual).toBe(expected);
     })
+
+    test('can add 0', () => {
+        const actual = calculator.add(5,0);
+        const expected = 5;
+        expect(actual).toBe(expected);
+    })
 })
 
 describe ('testing subtraction', () => {
@@ -91,6 +97,12 @@ describe ('testing subtraction', () => {
     test('can subtract a negative number from a negative number', () => {
         const actual = calculator.subtract(-5, -6);
         const expected = 1;
+        expect(actual).toBe(expected);
+    })
+
+    test('can subtract 0', () => {
+        const actual = calculator.subtract(5, 0);
+        const expected = 5;
         expect(actual).toBe(expected);
     })
 })
