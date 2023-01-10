@@ -133,3 +133,18 @@ describe('testing modulus', () => {
         expect(actual).toBe(expected);
     })
 })
+
+describe('testing even or odd', () => {
+
+    test('can give true if even', () => {
+        const actual = calculator.evenOrOdd(2);
+        const expected = (true);
+        expect(actual).toBe(expected);
+    })
+
+    test('can give false if odd', () => {
+        const actual = calculator.evenOrOdd(3);
+        const expected = (false);
+        expect(actual).toBe(expected);
+    })
+})

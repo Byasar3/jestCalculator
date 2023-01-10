@@ -29,6 +29,11 @@ const Calculator = function(){
             return -number1 
         } else return 0
     }
+    this.evenOrOdd = function(number1){
+        if (number1 % 2 === 0 ){
+            return true
+        } return false
+    }
 }
 
 // now instead of exporting just {add}, we export {Calculator}
