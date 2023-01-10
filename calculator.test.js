@@ -64,3 +64,24 @@ describe ('testing subtraction', () => {
         expect(actual).toBe(expected);
     })
 })
+
+describe('testing multiply', () => {
+
+    test('can multiply positive numbers', () => {
+        const actual = calculator.multiply(3, 3);
+        const expected = 9;
+        expect(actual).toBe(expected);
+    })
+
+    test('can multiply one positive number and one negative number', () => {
+        const actual = calculator.multiply(3, -3);
+        const expected = -9;
+        expect(actual).toBe(expected);
+    })
+
+    test('can multiply two negative numbers', () => {
+        const actual = calculator.multiply(-3, -3);
+        const expected = 9;
+        expect(actual).toBe(expected);
+    })
+})
